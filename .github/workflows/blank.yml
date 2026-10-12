@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu PC Gamer</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh;
+  background: #080816; color: white;
+  font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+h1 { color: #00ffff; text-shadow: 0 0 15px cyan; }
+.pc {
+  width: 240px; padding: 18px;
+  background: #17172b; border: 3px solid #00ffff;
+  border-radius: 18px;
+  box-shadow: 0 0 30px #00ffff66;
+}
+.glass {
+  background: #090916; padding: 15px;
+  border-radius: 10px; border: 1px solid #444;
+}
+.fans { display: flex; justify-content: space-around; }
+.fan {
+  width: 48px; height: 48px; margin: 8px 0;
+  border: 4px solid #ff00ff; border-radius: 50%;
+  background: radial-gradient(circle, cyan 15%, #17172b 20%);
+  box-shadow: 0 0 12px #ff00ff;
+  animation: spin 2s linear infinite;
+}
+.gpu {
+  height: 32px; margin-top: 15px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  border-radius: 5px; box-shadow: 0 0 15px cyan;
+}
+.base {
+  width: 280px; height: 12px;
+  background: #292940; border-radius: 8px;
+}
+p { color: #aaa; }
+button {
+  padding: 12px 20px; border: 0; border-radius: 8px;
+  background: #00ffff; color: #080816;
+  font-weight: bold; cursor: pointer;
+}
+button:hover { background: #ff00ff; color: white; }
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<h1>⚡ ULTRA GAMER ⚡</h1>
+<div class="pc">
+  <div class="glass">
+    <div class="fans"><div class="fan"></div><div class="fan"></div><div class="fan"></div></div>
+    <div class="gpu"></div>
+  </div>
+</div>
+<div class="base"></div>
+<p>RGB • PERFORMANCE • GAMING</p>
+<button onclick="alert('Modo gamer ativado! 🎮')">ATIVAR MODO GAMER</button>
+</body>
+</html>
